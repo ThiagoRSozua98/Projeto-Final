@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SolicitacaoActivity">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="0,1">
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="left"
+                android:text="@string/abonopecuniario"
+                tools:textSize="24sp" />
+
+            <RadioGroup
+
+                android:id="@+id/groupRadio"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioSim"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dp"
+                    android:text="@string/sim" />
+
+                <RadioButton
+                    android:id="@+id/radioNao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/nao" />
+            </RadioGroup>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="left"
+                android:text="@string/datainicio"
+                tools:textSize="24sp" />
+
+            <Button
+                android:id="@+id/dtInicio"
+                android:text="@string/selecione" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="left"
+                android:text="@string/qtdededias"
+                tools:textSize="24sp" />
+
+            <Spinner
+                android:id="@+id/qtDias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:prompt="selecione">
+
+            </Spinner>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:layout_gravity="left"
+                android:text="@string/datafim"
+                tools:textSize="24sp" />
+
+            <TextView
+                android:layout_height="match_parent"
+                android:layout_gravity="left"
+                android:hint="__/__/____" />
+
+        </TableRow>
+
+        <Button
+            android:id="@+id/btnRegistrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/registrar" />
+
+        <TableRow>
+
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
